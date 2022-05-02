@@ -34,8 +34,7 @@ class MainMenuState extends MusicBeatState
 	
 	var optionShit:Array<String> = [
 		'story_mode',
-		'freeplay',
-		'credits',
+                'freeplay',
 		'options'
 	];
 
@@ -50,7 +49,7 @@ class MainMenuState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Menu Selector", null);
 		#end
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
 
@@ -253,6 +252,7 @@ class MainMenuState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
+				//MusicBeatState.switchState(new MainMenuState()); making it unable to go to the master menu editor for cheaters gonna add this when idk 
 			}
 			#end
 		}
@@ -292,3 +292,4 @@ class MainMenuState extends MusicBeatState
 		});
 	}
 }
+//https://media.discordapp.net/attachments/908164308452651039/970795505720393770/unknown.png?width=1190&height=670
