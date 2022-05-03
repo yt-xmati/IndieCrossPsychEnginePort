@@ -600,7 +600,7 @@ class TitleState extends MusicBeatState
 					ngSpr.visible = false;
 				// credTextShit.visible = false;
 
-				// credTextShit.text = 'Shoutouts Tom Fulp';
+				// credTextShit.text = 'Shoutouts Tomlp';
 				// credTextShit.screenCenter();
 				case 9:
 					createCoolText([curWacky[0]]);
