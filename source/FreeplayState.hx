@@ -195,11 +195,6 @@ class FreeplayState extends MusicBeatState
 		var leText:String = " ";
 		var size:Int = 18;
 		#end
-		var text:FlxText = new FlxText(textBG.x, textBG.y + 4, FlxG.width, leText, size);
-		text.setFormat(Paths.font("vcr.ttf"), size, FlxColor.WHITE, RIGHT);
-		text.scrollFactor.set();
-		add(text);
-		super.create();
 	}
 
 	override function closeSubState() {
